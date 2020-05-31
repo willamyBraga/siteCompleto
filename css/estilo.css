@@ -1,0 +1,263 @@
+*{
+ margin: 0;
+ padding: 0;
+}
+body, p, h1, h2, input, textarea{
+    font-family: Roboto;
+}
+ul,li{
+    list-style: none;
+}
+li a{
+    text-decoration: none;
+}
+#cabecalho{
+    width: 100vw;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #201e1f;
+    position: fixed;
+    
+    /*position: fixed; Como deixar o menu e rodapé fixo ?*/
+}
+.logo{
+    width: 400px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.logo img{
+    width: 150px;
+    height: inherit;
+    background: transparent;
+
+}
+.logo h2{
+  color: #fff;
+  margin-right: 30px;
+}
+.menu{
+    flex: 1;
+    
+    padding-right: 30px;
+    
+}
+.menu nav #menu-item{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+#menu-item li a{
+    padding: 20px;
+    color: #fff;
+    border-bottom: 2px solid  #201e1f;
+}
+#menu-item li a:hover{
+    border-bottom: 2px solid #e60; 
+}
+
+
+#banner{
+  /*  height:calc(100vh - 80px); /*Unidade de medida vh*/
+    background-image: url('../img/baner2.jpeg');
+    background-size: cover;
+    max-width: 100%;
+    background-position: top;
+    overflow-x: hidden;
+    height: auto;
+     
+}
+#banner-info{
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #fff;
+   /* background-color: khaki;*/
+}
+
+#banner-info img{
+    border-radius: 50%;
+    background-color: #201e1f;
+    height: 120px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+#banner-info p{
+   /* background-color: #201e1f; */
+    width: 28%;
+    margin-left: 37.5%;   
+    font-size: 8px;
+}
+#banner-info h1{
+    margin-top: 150px ;
+}
+.menu-toglle{
+    float: right; 
+    color: #eee;
+    border: solid 1px #777;
+    border-radius: 3px;
+    height: auto;
+    padding: 10px 20px;
+    margin: 20px 15px;
+    cursor: pointer;
+}
+
+@media(min-width: 679px){
+    .menu-toglle{
+        display: none;
+    }
+}
+@media(max-width: 680px){
+    .menu{
+        display: none;
+    }
+}
+
+#sobre-mim{
+    padding: 15px;
+    background-color: #201e1f;
+    text-align: center;
+    height: 290px;
+    color: #fff;
+    padding-top: 50px;
+    
+}
+#sobre-mim h2{
+    margin-bottom: 20px;
+}
+#sobre-mim p{
+    max-width: 650px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#conteudo{
+    margin-top: -100px;
+    background-color: #ffff;
+    width: auto;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+#conteudo .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.conteudo-container{
+    flex: 1 1 1;
+    text-align: center;
+    padding: 60px 25px;
+    transition: transform 1s;
+    transform: translateX(0);
+}
+.conteudo-container:hover,
+.conteudo-container:focus{
+  background-color: rgb(248, 250, 248);  
+   transform: translateX(5px); 
+   
+}
+
+
+.conteudo-container img{
+    height: 60px;
+    padding: 15px;
+    margin-bottom: 25px;
+    border-top:  1px solid #ed1e24;
+    border-left: 1px solid #ED1E24;
+    border-bottom: 1px solid #ED1E24;
+    border-right: 1px solid #ED1E24;
+}
+.central{
+    border-left: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+}
+
+.conteudo-container .sub-titulo{
+    font-weight: bold;
+    color: #ED1E24;
+    margin-top: 50px;
+    margin-bottom: 20px;;
+}
+
+.conteudo-container p{
+    line-height: 25px;
+}
+.conteudo-container h3{
+    font-size: 20px;
+    
+}
+#trab{
+    text-align: center;
+    padding-top: 50px;
+}
+#trab h2{
+    margin-bottom: 30px;
+}
+#trab p{
+    margin-bottom: 50px;
+}
+#trab a{
+    font-weight: bold;
+    color: #ed1e24;
+}
+
+.trab-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+footer{
+    background-color: #201e1f;
+    color: #fff;
+    text-align: center;
+    padding: 50px 0;
+}
+
+footer img{
+    margin: 30px 0;
+    height: 80px;
+}
+footer p{
+    margin-top: 25px;
+}
+footer form{
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer input, footer textarea{
+    border: none;
+    padding: 15px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    width: 100%;
+    display: block;
+}
+footer .detalhes{
+    font-weight: bold;
+}
+footer #enviar{
+    background-color: rgb(9, 50, 85);
+    color: #fff;
+    cursor: pointer;
+}
+footer #enviar:hover{
+    background-color: #ed1e24
+}
